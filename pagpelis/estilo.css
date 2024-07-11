@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffc107;
+    color: #121212;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.movie-detail {
+    margin: 20px 0;
+}
+
+.movie-header {
+    display: flex;
+    align-items: flex-start;
+    animation: fadeIn 2s;
+}
+
+.movie-header img {
+    max-width: 300px;
+    margin-right: 20px;
+    border: 5px solid #ffc107;
+    border-radius: 5px;
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.movie-info h2 {
+    margin: 0 0 10px;
+}
+
+.actors-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.actors-list li {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.actors-list img {
+    max-width: 100px;
+    border: 2px solid #ffc107;
+    border-radius: 5px;
+}
+
+.movie-trailer {
+    margin: 20px 0;
+}
+
+.movie-trailer iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin: 20px 0;
+}
+
+.movie-reviews {
+    margin: 20px 0;
+}
+
+.review-item {
+    border: 1px solid #ffc107;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.review-item .like-btn, .review-item .dislike-btn, .review-item .reply-btn, .reply-section .submit-reply {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.reply-section {
+    display: none;
+    margin-top: 10px;
+}
+
+.review-form textarea, .reply-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ffc107;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.review-form button, .reply-section button {
+    background-color: #ffc107;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+a{
+    
+    color: white;
+}

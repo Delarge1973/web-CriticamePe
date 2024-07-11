@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CriticaMePe - Película 1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CriticaMePe</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../movies.html">Películas</a></li>
+                    <li><a href="../reviews.html">Reseñas</a></li>
+                    <li><a href="../login.html">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="movie-detail">
+            <div class="movie-header">
+                <img src="../imag/planetadelosismios.jpg" alt="Película 1">
+                <div class="movie-info">
+                    <h2>El Planeta De Los Simios: Nuevo Reino </h2>
+                    <p>Calificación: ⭐⭐⭐⭐☆</p>
+                    <h3>Trailer</h3>
+                
+                    <ul class="actors-list">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/raYE6Ild7a4?si=IWVi-Vi52vq3rv8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </ul>
+                </div>
+            </div>
+            <div class="movie-trailer">
+                
+            </div>
+            <div class="movie-reviews">
+                <h3>Reseñas</h3>
+                <div class="review-item">
+                    <p>Reseña de usuario 1...</p>
+                    <button class="like-btn">👍 Like</button> <span>10</span>
+                    <button class="dislike-btn">👎 Dislike</button> <span>2</span>
+                    <button class="reply-btn">Responder</button>
+                    <div class="reply-section">
+                        <textarea placeholder="Escribe tu respuesta..."></textarea>
+                        <button class="submit-reply">Enviar</button>
+                    </div>
+                </div>
+                <!-- Agrega más reseñas aquí -->
+                <h3>Añadir Reseña</h3>
+                <form class="review-form">
+                    <textarea placeholder="Escribe tu reseña..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CriticaMePe. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

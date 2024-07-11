@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CriticaMePe - Película 1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CriticaMePe</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../movies.html">Películas</a></li>
+                    <li><a href="../reviews.html">Reseñas</a></li>
+                    <li><a href="../login.html">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="movie-detail">
+            <div class="movie-header">
+                <img src="../imag/amigos imaginarios.jpg" alt="Película 1">
+                <div class="movie-info">
+                    <h2>Amigos Imaginarios</h2>
+                    <p>Calificación: ⭐⭐⭐⭐⭐</p>
+                    <h3>Actores Principales</h3>
+                    <ul class="actors-list">
+                        <li>
+                            <a href="https://g.co/kgs/WJ5oXh5"><img src="actorres/ryanreynolds.jpg" alt="Actor 1">
+                            
+                                Ryan Reynolds
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://g.co/kgs/ReB4otU"><img src="actorres/caileyfleming.jpg" alt="Actor 2">
+                            
+                                Cailey Fleming
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://g.co/kgs/4RwxiLg"><img src="actorres/jhonkrusintki.jpg" alt="Actor 3">
+                            
+                                John Krasinski
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="https://g.co/kgs/s7k7ZuB"><img src="actorres/emilyblunty.jpg" alt="Actor 4">
+                            
+                                Emily Blunt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="movie-trailer">
+                <h3>Trailer</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/suxpHwb9A3c?si=4kVMu8623U3Xe6-3"
+                 title="YouTube video player" frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="movie-reviews">
+                <h3>Reseñas</h3>
+                <div class="review-item">
+                    <p>Reseña de usuario 1...</p>
+                    <button class="like-btn">👍 Like</button> <span>10</span>
+                    <button class="dislike-btn">👎 Dislike</button> <span>2</span>
+                    
+                    <div class="reply-section">
+                        <textarea placeholder="Escribe tu respuesta..."></textarea>
+                        <button class="submit-reply">Enviar</button>
+                    </div>
+                </div>
+                <!-- Agrega más reseñas aquí -->
+                <h3>Añadir Reseña</h3>
+                <form class="review-form">
+                    <textarea placeholder="Escribe tu reseña..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CriticaMePe. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
