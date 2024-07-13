@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -18,15 +19,35 @@
                     <li><a href="movies.html">Películas</a></li>
                     <li><a href="reviews.html">Reseñas</a></li>
                     <li><a href="login.html">Login/Register</a></li>
+                    <li class="search-container">
+                        <div id="icon-search" class="icon-search"><i class="fas fa-search"></i></div>
+                        <div id="ctn-bars-search" class="ctn-bars-search">
+                            <input type="text" id="inputSearch" placeholder="Buscar...">
+                        </div>
+                    </li>
                 </ul>
             </nav>
+            <div id="cover-ctn-search" class="cover-ctn-search"></div>
+            <div id="box-search" class="box-search">
+                <ul>
+                    <li><a href="pagpelis/amigosimag.html"><i class="fas fa-search"></i>Amigos Imaginarios</a></li>
+                    <li><a href="pagpelis/badboys.html"><i class="fas fa-search"></i>Bad Boys: Hasta La Muerte</a></li>
+                    <li><a href="pagpelis/carrusel.html"><i class="fas fa-search"></i>Carrusel</a></li>
+                    <li><a href="pagpelis/clubdevan.html"><i class="fas fa-search"></i>Club de Vándalos</a></li>
+                    <li><a href="pagpelis/garfield.html"><i class="fas fa-search"></i>Garfield</a></li>
+                    <li><a href="pagpelis/hachiko2.html"><i class="fas fa-search"></i>HACHIKO 2</a></li>
+                    <li><a href="pagpelis/inmaculada.html"><i class="fas fa-search"></i>Inmaculada</a></li>
+                    <li><a href="pagpelis/planetsim.html"><i class="fas fa-search"></i>Planeta de Los Simios: Nuevo Reino</a></li>
+                </ul>
+            </div>
         </div>
     </header>
+    <!-- Resto del HTML permanece igual -->
     <main class="container">
         <section class="highlighted-movie"><a href="pagpelis/clubdevan.html">
             <h2>Película Destacada</h2>
             <div class="highlighted-content">
-                <img src="imag/clubdelosvandalos.jpg" alt="Película Destacada">
+                <img src="imag/clubdelosvandalos.jpg" alt="Club de los Vándalos">
                 <div class="highlighted-info">
                     <p>El club de los Vándalos sigue el ascenso de un club de motociclistas del medio oeste,
                          los Vándalos. Visto desde el punto de vista de los integrantes, el club pasa, en el 
@@ -40,48 +61,94 @@
             <h2>Recomendaciones de Películas</h2>
             <div class="carousel">
                 <div class="movie-item"><a href="pagpelis/amigosimag.html">
-                    <img src="imag/amigos imaginarios.jpg" alt="Película 1">
+                    <img src="imag/amigos imaginarios.jpg" alt="Amigos Imaginarios">
                     <p>Amigos Imaginarios</p></a>
                 </div>
                 <div class="movie-item"><a href="pagpelis/garfield.html">
-                    <img src="imag/garfild.jpg" alt="Película 2">
+                    <img src="imag/garfild.jpg" alt="Garfield: Fuera de Casa">
                     <p>Garfield: Fuera de Casa</p></a>
                 </div>
                 <div class="movie-item"><a href="pagpelis/badboys.html">
-                    <img src="imag/HO00002029.jpg" alt="Película 3">
+                    <img src="imag/HO00002029.jpg" alt="Bad Boys: Hasta la Muerte">
                     <p>Bad Boys: Hasta la Muerte</p></a>
                 </div>
                 <div class="movie-item"><a href="pagpelis/inmaculada.html">
-                    <img src="imag/inmaculada.jpg" alt="Película 4">
+                    <img src="imag/inmaculada.jpg" alt="Inmaculada">
                     <p>Inmaculada</p></a>
                 </div>
-                <div class="movie-item"><a href="pagpelis/">
-                    <img src="imag/lazosdevida.jpg" alt="Película 5">
+                <div class="movie-item"><a href="pagpelis/planetsim.html">
+                    <img src="imag/lazosdevida.jpg" alt="Lazos de Vida">
                     <p>Lazos de Vida</p></a>
                 </div>
-                <div class="movie-item"><a href="pagpelis/planetsim.html"></a>
-                    <img src="imag/planetadelosismios.jpg" alt="Película 6">
-                    <p>Planeta de los Simios: Nuevo Reino</p>
+                <div class="movie-item"><a href="pagpelis/planetsim.html">
+                    <img src="imag/planetadelosismios.jpg" alt="Planeta de los Simios: Nuevo Reino">
+                    <p>Planeta de los Simios: Nuevo Reino</p></a>
                 </div>
                 <div class="movie-item">
-                    <img src="imag/viejasmiagas.jpg" alt="Película 7">
+                    <img src="imag/viejasmiagas.jpg" alt="Viejas Amigas">
                     <p>Viejas Amigas</p>
                 </div>
                 <div class="movie-item">
-                    <img src="imag/intensamente.jpg" alt="Película 8">
+                    <img src="imag/intensamente.jpg" alt="Intensamente 2">
                     <p>Intensamente 2</p>
                 </div>
                 <div class="movie-item"><a href="pagpelis/hachiko2.html">
-                    <img src="imag/hachiko1.jpg" alt="Película 9">
+                    <img src="imag/hachiko1.jpg" alt="Hachiko 2: Siempre a tu Lado">
                     <p>Hachiko 2: Siempre a tu Lado</p></a>
                 </div>
                 <div class="movie-item"><a href="pagpelis/carrusel.html">
-                    <img src="imag/carrusel.jpg" alt="Película 10">
+                    <img src="imag/carrusel.jpg" alt="Carrusel">
                     <p>Carrusel</p></a>
                 </div>
             </div>
         </section>
     </main>
+
+    <script>
+        document.getElementById("icon-search").addEventListener("click", mostrar_buscador);
+        document.getElementById("cover-ctn-search").addEventListener("click", ocultar_buscador);
+
+        var bars_search = document.getElementById("ctn-bars-search");
+        var cover_ctn_search = document.getElementById("cover-ctn-search");
+        var inputSearch = document.getElementById("inputSearch");
+        var box_search = document.getElementById("box-search");
+
+        function mostrar_buscador(){
+            bars_search.style.top = "80px";
+            cover_ctn_search.style.display = "block";
+            inputSearch.focus();
+            if (inputSearch.value === ""){
+                box_search.style.display = "none";
+            }
+        }
+
+        function ocultar_buscador(){
+            bars_search.style.top = "-10px";
+            cover_ctn_search.style.display = "none";
+            inputSearch.value = "";
+            box_search.style.display = "none";
+        }
+
+        document.getElementById("inputSearch").addEventListener("keyup", buscador_interno);
+
+        function buscador_interno(){
+            var filter = inputSearch.value.toUpperCase();
+            var li = box_search.getElementsByTagName("li");
+            for (var i = 0; i < li.length; i++){
+                var a = li[i].getElementsByTagName("a")[0];
+                var textValue = a.textContent || a.innerText;
+                if(textValue.toUpperCase().indexOf(filter) > -1){
+                    li[i].style.display = "";
+                    box_search.style.display = "block";
+                    if (inputSearch.value === ""){
+                        box_search.style.display = "none";
+                    }
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
     <footer>
         <div class="container">
             <p>&copy; 2024 CriticaMePe. Todos los derechos reservados.</p>
