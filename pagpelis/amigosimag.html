@@ -82,6 +82,20 @@
                     <button type="submit">Enviar</button>
                 </form>
             </div>
+            <script>
+                document.querySelector('.review-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    var reviewText = this.querySelector('textarea').value;
+                    if (reviewText) {
+                        var reviewList = document.createElement('ul');
+                        var reviewItem = document.createElement('li');
+                        reviewItem.textContent = reviewText;
+                        reviewList.appendChild(reviewItem);
+                        this.parentNode.insertBefore(reviewList, this.nextSibling);
+                        this.querySelector('textarea').value = '';
+                    }
+                });
+            </script>
         </section>
     </main>
     <footer>
@@ -92,3 +106,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
